@@ -1,0 +1,14 @@
+<div class="principal">
+  <mat-card>
+    <mat-card class="file-upload" (click)="fileInput.click()" appDragAndDrop (fileDropped)="addFile($event)">
+      <input hidden type="file" multiple #fileInput (change)="addFile($event.target.files)">
+      <mat-icon class="icon">cloud_upload</mat-icon>
+    </mat-card>
+    <mat-nav-list>
+      <mat-list-item *ngFor="let file of files; let i = index">
+        <span matLine>{{ file }}</span>
+        <mat-icon class="icon" (click)="deleteFile(i)">delete</mat-icon>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-card>
+</div>

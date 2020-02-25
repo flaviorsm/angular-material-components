@@ -1,0 +1,50 @@
+.principal {
+  width: 100%;
+}
+
+.file-upload {   
+    margin: 0px auto;
+    border: 2px dashed;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-box;
+  }
+
+  .file-upload .icon {    
+    font-size: 30pt;
+    margin: 0;
+  }
+
+  .list-item {
+    border-radius: 15px;
+  }
+
+  .file-upload:hover {
+    cursor: pointer;
+    background-color: #9ecbec !important;
+    color: #042c83;
+    opacity: 1;
+  }
+  
+  .files-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    background: #ffffff;
+    border: 1px dashed;
+    border-radius: 12px;
+    padding: 5px;
+    color: #1c8adb;
+  }
+  
+  .files-list .files-delete {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .files-list .files-delete .icon {
+    font-size: xx-large;
+    color: #ff0000;
+  }
